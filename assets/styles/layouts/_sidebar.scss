@@ -1,0 +1,110 @@
+.sidebar {
+    h3 {
+        color: #696969;
+        text-transform: uppercase;
+        font-size: 100%;
+        letter-spacing: 1.1px;
+        font-family: $font-tertiary;
+        font-weight: bold;
+        border-bottom: 1px solid #e6791b;
+        padding-bottom: 3px;
+        margin-bottom: 15px;
+    }
+}
+
+.social-count-plus .label {
+    font-size: 65% !important;
+}
+.social-count-plus .count {
+    font-size: 85% !important;
+}
+.social-count-plus span.items span {
+    display: inline;
+    margin-right: 5px;
+}
+/* Most popular posts widget */
+.wpp-list {
+    list-style-type: none;
+    padding: 0;
+    li {
+        border-bottom: $border;
+        margin-bottom: 10px;
+        padding-bottom: 7px;
+        overflow: auto;
+        line-height: 1.1;
+        &:last-child {
+            border-width: 0;
+            margin-bottom: 0;
+            
+        }
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        float: left;
+        margin: 0.1em .75em .75em 0;
+    }
+    a {
+        font-family: $font-headline;
+        font-size: 85.714286%;
+    }
+}
+
+.recent-posts-widget-with-thumbnails, .widget_categories {
+    li {
+        border-bottom: $border;
+        margin-bottom: 7px;
+        padding-bottom: 7px;
+        line-height: 1.1;
+        color: rgba(0,0,0,0.4);
+        font-size: 65%;
+        font-family: $font-tertiary;
+        &:last-child {
+            border-width: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+    a {
+        font-size: 131.8681318681%;
+        font-family: $font-headline;
+        font-weight: bold;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+}
+.rpwwt-widget {
+    ul li {
+        margin-bottom: 0;
+        margin-top: 5px;
+        img {
+            margin-top: 0;
+            margin-right: 10px;
+        }
+        .rpwwt-post-date {
+            margin-top: 5px;
+        }
+        &:last-child {
+            margin-top: 5px;
+        }
+    }
+}
+
+.widget_categories {
+    ul.children {
+        font-size: 131.8681318681%;
+        li {
+            padding-left: 5px;
+            margin-top: 4px;
+            ::before {
+                content: ' - ';
+            }
+            a {
+                color: rgb(141, 141, 141);
+            }
+        }
+    }
+}

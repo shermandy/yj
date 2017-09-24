@@ -1,0 +1,20 @@
+article.sticky {
+    width: 100%;
+    margin: 15px 15px 0;
+    h2 {
+        font-size: 1.25rem;
+    }
+    .sticky-summary {
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .sticky-img {
+        float: left;
+        margin-right: 15px;
+    }
+}
+
+.yj-section article.sticky {
+    margin: 0;
+}
