@@ -56,6 +56,8 @@ function setup() {
 	'flex-height' => true,
 	'flex-width'  => true,
   ));
+    
+    add_editor_style('editor-style.css');
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 

@@ -1,0 +1,23 @@
+blockquote {
+    font-size: 125%;
+    color: black;
+    font-style: italic;
+    padding: 10px 50px;
+    position: relative;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 75%;
+    margin-top: 10px;
+    color: lighten($brand-primary, 30%);
+}
+
+blockquote::before {
+    content: "\201C";
+    opacity: 0.3;
+    font-size: 275%;
+    position: absolute;
+    left: 0px;
+    top: -10px;
+}

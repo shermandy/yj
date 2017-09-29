@@ -52,3 +52,9 @@ main {
         margin-top: 15px;
     }
 }
+
+@media (min-width: map-get($grid-breakpoints,sm)) {
+    article.breaking-news {
+        display: block;
+    }
+}
