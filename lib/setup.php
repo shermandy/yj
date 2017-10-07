@@ -98,6 +98,7 @@ function display_sidebar() {
     is_author(),
     //is_front_page(),
     is_page_template('template-no-sidebar.php'),
+    is_post_type_archive('staff')
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

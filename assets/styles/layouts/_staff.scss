@@ -1,0 +1,137 @@
+.post-type-archive-staff {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-family: $font-tertiary;
+            font-size: 100%;
+            margin-bottom: 15px;
+        }
+        .staff-member {
+            margin: 5px;
+        }
+        h3,
+        h4 {
+            font-family: $font-tertiary;
+            font-size: 100%;
+            font-weight: normal;
+            margin: 0;
+        }
+        h4 {
+            font-size: 80%;
+            a {
+                color: $grey;
+            }
+        }
+        img.attachment-staff-section-thumb {
+            display: block;
+            margin-bottom: 5px;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .modal-content {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        border-radius: 0.2rem;
+        button.close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0 10px;
+            z-index: 9;
+            color: #fff;
+            font-size: 200%;
+        }
+        .modal-body {
+            padding: 0;
+            background: $gradient;
+        }
+        .modal-picture {
+            padding: 15px 15px 0;
+            width: 100%;
+            position: relative;
+            text-align: center;
+            .img-circle {
+                img {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    position: relative;
+                    border: 5px solid rgba(255, 255, 255, 0.9);
+                }
+            }
+        }
+        .modal-bio {
+            padding: 15px;
+            width: 100%;
+            z-index: 1;
+            text-align: center;
+            h3 {
+                font-family: $font-headline;
+                color: rgba(255, 134, 7, .81);
+                letter-spacing: 1pt;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 150%;
+                margin-bottom: 5px;
+            }
+            h4 {
+                color: rgba(255, 255, 255, 0.5);
+            }
+            .modal-bio-text {
+                color: rgba(255,255,255,0.9);
+                max-width: 75%;
+                margin: 10px auto;
+                font-size: 85%;
+                font-family: $font-tertiary;
+            }
+            .modal-links {
+                list-style-type: none;
+                a {
+                    color: rgba(255,255,255,0.5);
+                    font-family: $font-tertiary;
+                    font-size: 85%;
+                }
+                i {
+                    margin-right: 6px;
+                    color: rgba(255,255,255,0.8)
+                }
+                li {
+                    display: inline;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, sm)) and (min-width: map-get($grid-breakpoints, xs)) {
+    .post-type-archive-staff {
+        main {
+            .staff-member {}
+        }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, md)) and (min-width: map-get($grid-breakpoints, sm)) {
+    .post-type-archive-staff {
+        main {
+            .staff-member {
+                width: calc(50% - 10px);
+            }
+        }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, lg)) and (min-width: map-get($grid-breakpoints, md)) {
+    .post-type-archive-staff {
+        main {
+            .staff-member {}
+        }
+    }
+}

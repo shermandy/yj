@@ -12,7 +12,9 @@
         <div class="featured-img">
             <?php the_post_thumbnail('single-full', array('class' => 'img-fluid')); ?>
         </div>
-        
+        <div class="media-credit">
+            <?php the_media_credit_html($post); ?>
+        </div>
         <?php } ?>
         <?php the_content(); ?>
     </div>

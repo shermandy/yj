@@ -235,8 +235,9 @@ header .search-box input[type=submit] {
             text-decoration: underline;
         }
     }
-    header nav li.current-menu-item a {
-        color: #3b7fce;
+    header nav li.current-menu-item a, header nav li.current-post-ancestor a {
+        color: $brand-light;
+        
     }
     header nav .container {
         display: block;

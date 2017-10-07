@@ -395,11 +395,15 @@ nav.page-nav {
     }
 }
 
+
+.archive .media-credit {
+    display: none;
+}
 .media-credit {
-    width: 100%;
+    width: 100% !important;
+    padding: 10px 15px 10px 0;
     font-size: 65%;
     text-align: right;
-    margin-bottom: 20px;
     color: rgba(0, 0, 0, 0.6);
     a {
         color: #000
@@ -440,6 +444,16 @@ nav.page-nav {
 }
 
 .entry-content {
+    .featured-img {
+        text-align: center;
+        margin-bottom: 25px;
+        img {
+            margin-top: 10px;
+        }
+    }
+    p > a {
+        color: $brand-light;
+    }
     table {
         th {
             background: #e8e8e8;

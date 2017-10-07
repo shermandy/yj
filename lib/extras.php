@@ -39,9 +39,11 @@ add_image_size( 'breaking-thumbnail', 800, 600 );
 add_image_size( 'breaking-sub-thumbnail', 300, 200 );
 add_image_size( 'three-large', 627, 400, array( 'center', 'top' ) );
 add_image_size( 'section-top', 510, 340 );
-add_image_size( 'standard-thumbnail', 450, 300 );
+add_image_size( 'standard-thumbnail', 450, 300, true );
 add_image_size( 'section-small', 100, 70, array( 'center', 'top' ) );
-add_image_size( 'single-full', 730, 9999 );
+add_image_size( 'single-full', 730, 500 );
+add_image_size('staff-section-thumb', 300, 200, true);
+add_image_size('staff-section-square-thumb', 200, 200, true);
 
 /**
  * Add custom meta box for featured stories

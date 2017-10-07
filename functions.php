@@ -30,8 +30,8 @@ unset($file, $filepath);
 // Register User Contact Methods
 function custom_user_contact_methods( $user_contact_method ) {
 
-	$user_contact_method['facebook'] = __( 'Facebook username', 'text_domain' );
-	$user_contact_method['twitter'] = __( 'Twitter username', 'text_domain' );
+	$user_contact_method['facebook'] = __( 'Facebook URL', 'text_domain' );
+	$user_contact_method['twitter'] = __( 'Twitter URL', 'text_domain' );
  	$user_contact_method['position'] = __( 'Staff position', 'text_domain' );
    
 
